@@ -43,4 +43,37 @@ git bash :
 	git rm fileName(文件名)
 
 	重命名文件
-	git mv 文件名 readme
+	git mv 旧文件名 新文件名
+
+	查看提交的历史记录
+	git log
+
+	
+
+	基本的分支管理
+	------------------------
+
+	创建一个分支
+	git branch 分支名
+
+	切换工作目录到 分支
+	git checkout 分支名
+
+	将上面的命令合在一起，创建workspace分支并切换到workspace
+	git checkout --b 分支名
+
+	
+	合并分支，当前工作目录为master
+	git merge 分支名
+
+	合并完成后，没有出现冲突，删除合并的分支
+	git branch --d 分支名
+
+	拉取远程仓库的数据，语法为git fetch [remote-name]
+	git fetch
+	
+	fetch会拉取最新的远程仓库数据，但不会自动到当前目录下，要自动合并
+	git full
+	
+	查看远程仓库的信息
+	git remote show origin
