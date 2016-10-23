@@ -15,3 +15,29 @@ git bash :
 	git remote -v
 
 	
+	提交修改
+	-------------------------------
+		
+	添加当前修改的文件到暂存区
+	git add .
+
+	如果你自动追踪文件，包括你已经手动删除的，状态为deleted的文件
+	git add -u
+
+	提交修改
+	git commit -m "你的注释"
+
+	推送你的更新到远程服务器,语法为 git push [远程名] [本地分支]:[远程分支]
+	git push origin master	
+
+	查看文件状态
+	git status
+
+	跟踪新文件
+	git add fileName(文件名)
+
+	仅在暂存区删除，保留文件在当前目录，不再跟踪
+	git rm --cached fileName(文件名)
+
+	从当前跟踪列表移除文件，并完全删除
+	git rm fileName(文件名)
