@@ -41,3 +41,6 @@ git bash :
 
 	从当前跟踪列表移除文件，并完全删除
 	git rm fileName(文件名)
+
+	重命名文件
+	git mv 文件名 readme
