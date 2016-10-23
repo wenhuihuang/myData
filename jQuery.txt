@@ -1,0 +1,6 @@
+>>jquery serialize这个方法出现乱码
+  原因：.serialize()自动调用了encodeURIComponent方法将数据编码了    
+  解决方法：调用decodeURIComponent(XXX,true);将数据解码    
+  例如：    
+  var params = jQuery("#formId").serialize();   
+  params = decodeURIComponent(params,true);  

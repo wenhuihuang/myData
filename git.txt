@@ -1,0 +1,17 @@
+git bash :
+	取得git仓库
+	----------------------------
+	
+	初始化一个版本仓库
+	git init	
+
+	clone远程版本库
+	git clone yourgitaddress(你的git地址)	
+
+	添加远程版本库origin
+	git remote add origin yourgitaddress(你的git地址)
+
+	查看远程仓库
+	git remote -v
+
+	

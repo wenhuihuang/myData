@@ -1,0 +1,32 @@
+>>登录数据库
+  >mysql -hlocalhost -uroot -p 数据库名称
+
+》》
+创建数据库
+create database dataname
+
+>>查询所有数据表
+  >show tables;
+
+>>查询表的字段信息/表结构
+  >desc 表名称;
+
+>>添加表字段
+  alter table table1 add transactor varchar(10) not Null;
+  alter table   table1 add id int unsigned not Null auto_increment primary key
+
+>>修改某个表的字段类型及指定为空或非空
+  >alter table 表名称 change 字段名称 字段名称 字段类型 [是否允许非空];
+  >alter table 表名称 modify 字段名称 字段类型 [是否允许非空];
+  >alter table 表名称 modify 字段名称 字段类型 [是否允许非空];
+
+>>修改某个表的字段名称及指定为空或非空
+  >alter table 表名称 change 字段原名称 字段新名称 字段类型 [是否允许非空
+
+>>如果要删除某一字段，可用命令：ALTER TABLE mytable DROP 字段 名;
+
+----------------------
+启动mysql数据库：在出来的DOS命令窗口直接输入net start mysql后回车。（另附：关闭的命令为net stop mysql）
+
+如果你的mysql没有安装在C盘下，你需要先使用DOS命令进入mysql的安装目录下的bin目录中。以我的电脑为例，方法如下：输入D:进入D盘，在输入cd D:\Tools\MySQL5.5.25\bin进入到mysql的bin目录下才可以输入 mysql -hlocalhost -uroot -p
+---------------------------

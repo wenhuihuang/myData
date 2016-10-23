@@ -1,0 +1,14 @@
+js:要点 
+
+>>js中的Function()对象类型 所有自定义的函数都是这个对象类型
+  var add=new Function("函数参数","函数体内容")//这个函数参数全是字符串，最后一个是函数体。前面是参数，按顺序/add是指向对象的引用
+  如var add=new Funtction("number","alert(number+10)")
+  js中定的函数全部都会转成这种引用格式
+
+>>js中undefined是一种数据类型，表示没定义的
+
+>>js中arguments是每个函数中都有的隐式属性
+  表示给函数实际传递的参数
+  arguments[i]i从0开始
+  arguments.length 表示参数的个数（长度）
+>>js中没有方法（函数）重载的概念

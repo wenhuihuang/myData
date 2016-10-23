@@ -1,0 +1,14 @@
+创建目录
+	mkdir 目录名
+移动文件
+	mv 原文件夹/原文件名 目标文件夹名/目标文件名
+解压zip
+	unzip 文件名
+解压*.tar.gz
+	tar -zxvf 压缩文件名.tar.gz
+压缩*.tar.gz
+	tar -zxvf 压缩文件名.tar.gz 被压缩文件名
+查看ip
+	ifconfig
+关机
+	shutdown -h now
